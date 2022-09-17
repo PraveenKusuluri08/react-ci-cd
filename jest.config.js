@@ -15,5 +15,7 @@ export default {
     },
   },
   setupFilesAfterEnv: ["./src/jest.setup.ts"],
-  transform: {},
+  transform: {
+    ".+\\.(css|styl|less|sass|scss)$": "jest-transform-css",
+  },
 }
